@@ -19,10 +19,26 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-export const metadata: Metadata = {
-  title: "Companio — Feel Connected",
-  description:
-    "Companio helps people feel connected, understood, and supported.",
+// export const metadata = {
+//   title: "Companio",
+//   icons: {
+//     icon: "/logo/companio-logo.png",
+//   },
+// };
+
+// export const metadata: Metadata = {
+//   title: "Companio — Feel Connected",
+//   description:
+//     "Companio helps people feel connected, understood, and supported.",
+// };
+
+
+export const metadata = {
+  title: "Companio – Feel Connected",
+  description: "Companio helps people feel connected, understood and supported.",
+  icons: {
+    icon: "\logo\companio-logo.jpeg",
+  },
 };
 
 export default function RootLayout({
