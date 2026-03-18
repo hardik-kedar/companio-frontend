@@ -422,7 +422,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
       <div className="bg-[#F3EDE4] p-16 rounded-3xl shadow-soft space-y-8 border border-black/5">
 
         <p className="text-6xl font-serif font-semibold text-primary">
-          ₹209
+          ₹199
           <span className="text-base font-normal text-gray-500"> / month</span>
         </p>
 
@@ -443,7 +443,11 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
 
 
 
-
+<div className="flex gap-4 text-sm">
+  <a href="/privacy-policy">Privacy Policy</a>
+  <a href="/terms">Terms</a>
+  <a href="/refund-policy">Refund Policy</a>
+</div>
 
 
       {/* ================= SAFETY STRIP ================= */}
@@ -512,7 +516,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
         href="mailto:partners@companio.com"
         className="text-primary hover:underline transition"
       >
-        partners@companio.com
+        companio.team@gmail.com
       </a>
 
     </div>
