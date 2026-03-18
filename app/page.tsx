@@ -442,14 +442,6 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
 </FadeInSection>
 
 
-
-<div className="flex gap-4 text-sm">
-  <a href="/privacy-policy">Privacy Policy</a>
-  <a href="/terms">Terms</a>
-  <a href="/refund-policy">Refund Policy</a>
-</div>
-
-
       {/* ================= SAFETY STRIP ================= */}
       <FadeInSection>
         <section className="py-20 border-t border-black/5 bg-white">
