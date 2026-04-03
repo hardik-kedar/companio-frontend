@@ -263,7 +263,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
             1. Discover
           </h3>
           <p className="text-gray-600">
-            Browse verified companions near you.
+            Browse verified hosts near you.
           </p>
         </div>
 
@@ -324,7 +324,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
         <p className="text-6xl font-serif font-semibold text-primary">
           ₹800
         </p>
-        <p className="text-gray-500 mt-2">per hour</p>
+        <p className="text-gray-500 mt-2">per session</p>
 
         <div className="mt-8 pt-8 border-t border-black/5">
           <p className="text-sm text-gray-500">
@@ -445,7 +445,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
         href="mailto:partners@companio.com"
         className="text-primary hover:underline transition"
       >
-        companio.team@gmail.com
+        trycompanio@gmail.com
       </a>
 
     </div>
