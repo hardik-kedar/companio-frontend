@@ -331,7 +331,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
             After commission:
           </p>
           <p className="text-2xl font-semibold text-primary">
-            ₹680/hr
+            ₹680/session
           </p>
         </div>
       </div>
