@@ -231,9 +231,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
         </p>
 
         <div className="pt-4">
-          {/* <button className="bg-primary text-white px-8 py-3 rounded-full hover:scale-105 transition">
-            Explore Companio
-          </button> */}
+         
         </div>
       </div>
 
@@ -242,25 +240,6 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
 </FadeInSection>
 
   
-  
-      {/* <FadeInSection>
-        <section className="py-32 bg-[#F8F5F1]">
-          <div className="max-w-4xl mx-auto px-6 text-center space-y-8">
-
-            <h2 className="text-[42px] md:text-[56px] font-serif leading-tight">
-              Why Companio Exists
-            </h2>
-
-            <p className="text-lg text-gray-600 leading-relaxed">
-              Loneliness is real. Many people struggle to step out,
-              meet new people, or find someone who truly listens.
-              Companio creates a respectful, intentional space
-              where connection feels safe and meaningful.
-            </p>
-
-          </div>
-        </section>
-      </FadeInSection> */}
 
       {/* ================= HOW IT WORKS ================= */}
     
@@ -314,48 +293,6 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
     
     
     
-      {/* <FadeInSection>
-        <section  className="py-32 bg-white">
-          <div className="max-w-6xl mx-auto px-6 text-center space-y-16">
-
-            <h2 className="text-[42px] md:text-[56px] font-serif">
-              How It Works
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-12">
-
-              <div className="bg-[#F3EDE4] p-10 rounded-3xl shadow-soft">
-                <h3 className="text-xl font-semibold mb-4">
-                  1. Discover
-                </h3>
-                <p className="text-gray-600">
-                  Browse verified companions near you.
-                </p>
-              </div>
-
-              <div className="bg-[#F3EDE4] p-10 rounded-3xl shadow-soft">
-                <h3 className="text-xl font-semibold mb-4">
-                  2. Connect
-                </h3>
-                <p className="text-gray-600">
-                  Book securely and unlock conversation.
-                </p>
-              </div>
-
-              <div className="bg-[#F3EDE4] p-10 rounded-3xl shadow-soft">
-                <h3 className="text-xl font-semibold mb-4">
-                  3. Experience
-                </h3>
-                <p className="text-gray-600">
-                  Share time, talk openly, build comfort.
-                </p>
-              </div>
-
-            </div>
-          </div>
-        </section>
-      </FadeInSection>
- */}
 
 
 

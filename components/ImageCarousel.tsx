@@ -32,7 +32,7 @@ export default function ImageCarousel() {
   }, []);
 
   return (
-    <div className="relative w-[420px] h-[520px] rounded-3xl overflow-hidden shadow-soft">
+    <div className="relative w-full max-w-[420px] h-[420px] sm:h-[480px] md:h-[520px] rounded-3xl overflow-hidden shadow-soft">
       {images.map((src, i) => (
         <Image
           key={i}
