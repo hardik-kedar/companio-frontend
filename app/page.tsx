@@ -420,43 +420,85 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
 
 
 {/* CONTACT SECTION */}
-<section className="py-20 border-t border-primary/10 bg-background">
-  <div className="max-w-5xl mx-auto px-6 text-center space-y-8">
+{/* CONTACT + LEGAL FOOTER SECTION */}
+<section className="py-16 sm:py-20 border-t border-primary/10 bg-background">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-    <h2 className="text-3xl font-semibold tracking-tight">
-      Get in Touch
-    </h2>
+    {/* Main Contact Block */}
+    <div className="text-center space-y-6">
 
-    <p className="text-muted max-w-xl mx-auto">
-      Have questions, feedback, or partnership inquiries?  
-      Reach out and we’ll respond promptly.
-    </p>
+      <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight">
+        Get in Touch
+      </h2>
 
-    <div className="flex flex-col md:flex-row justify-center gap-6 text-lg">
+      <p className="text-sm sm:text-base text-muted max-w-2xl mx-auto leading-relaxed">
+        Have questions, feedback, or partnership inquiries?
+        Reach out and we’ll respond promptly.
+      </p>
 
-      <a 
-        href="mailto:support@companio.com"
-        className="text-primary hover:underline transition"
+      {/* Emails */}
+      <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-6 text-sm sm:text-lg">
+
+        <a
+          href="mailto:companio.support@gmail.com"
+          className="text-primary hover:underline break-all transition"
+        >
+          companio.support@gmail.com
+        </a>
+
+        <a
+          href="mailto:trycompanio@gmail.com"
+          className="text-primary hover:underline break-all transition"
+        >
+          trycompanio@gmail.com
+        </a>
+
+      </div>
+    </div>
+
+    {/* Divider */}
+    <div className="border-t border-primary/10 my-8 sm:my-10" />
+
+    {/* Legal Links */}
+    <div className="flex flex-wrap justify-center gap-4 sm:gap-8 text-xs sm:text-sm text-muted font-medium">
+
+      <a
+        href="/privacy-policy"
+        className="hover:text-primary transition"
       >
-        companio.support@gmail.com
+        Privacy Policy
       </a>
 
-      <a 
-        href="mailto:partners@companio.com"
-        className="text-primary hover:underline transition"
+      <a
+        href="/terms"
+        className="hover:text-primary transition"
       >
-        trycompanio@gmail.com
+        Terms & Conditions
+      </a>
+
+      <a
+        href="/refund-policy"
+        className="hover:text-primary transition"
+      >
+        Refund Policy
+      </a>
+
+      <a
+        href="/return-policy"
+        className="hover:text-primary transition"
+      >
+        Return Policy
       </a>
 
     </div>
 
-    <p className="text-sm text-muted pt-6">
+    {/* Copyright */}
+    <p className="text-center text-xs sm:text-sm text-muted pt-8">
       © {new Date().getFullYear()} Companio. All rights reserved.
     </p>
 
   </div>
 </section>
-
 
 
 
