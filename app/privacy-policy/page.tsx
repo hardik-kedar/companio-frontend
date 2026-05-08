@@ -152,7 +152,7 @@ const PrivacyPolicy = () => {
             Privacy Policy
           </a>
           <a
-            href="/terms-and-conditions"
+            href="/terms"
             className="hover:text-white transition"
           >
             Terms & Conditions
