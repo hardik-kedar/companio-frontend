@@ -57,14 +57,19 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     <main className="min-h-screen bg-white text-black">
 
-      {/* ================= HERO ================= */}
+      ================= HERO =================
+
+{/* 
+
+
+
       <section className="relative overflow-hidden min-h-screen flex items-center pt-0 md:pt-4">
 
 
         <div className="max-w-6xl mx-auto px-6 py-32 grid md:grid-cols-2 gap-16 items-center">
 
           {/* LEFT CONTENT */}
-          <div className="space-y-10">
+          {/* <div className="space-y-10">
 
             <h1 className="text-[56px] md:text-[84px] font-serif leading-[1.05] tracking-tight">
               Connection,
@@ -74,8 +79,8 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
                 intentionally
                 <span className="absolute left-0 bottom-3 w-full h-3 bg-accent/40 -z-10 rounded-full"></span>
               </span>.
-            </h1>
-
+            </h1> */}
+{/* 
             <p className="text-xl text-gray-600 max-w-xl leading-relaxed font-serif">
               
               Companio creates a structured <br>
@@ -89,14 +94,14 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
             <div className="flex gap-6 pt-6">
              
         {/* GET STARTED */}
-         <Link href={isLoggedIn ? "/explore" : "/register"}>
+         {/* <Link href={isLoggedIn ? "/explore" : "/register"}>
     <button className="bg-primary text-white px-8 py-4 rounded-full shadow-soft hover:scale-105 transition duration-300">
       {isLoggedIn ? "Explore" : "Get Started"}
     </button>
-  </Link>
+  // </Link> */} 
 
         {/* LEARN MORE */}
-        <Link href="/how-payments-work">
+        {/* <Link href="/how-payments-work">
         <button
           
           className="text-black underline underline-offset-4 hover:text-primary transition duration-300"
@@ -105,32 +110,86 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
         </button>
 
         </Link>
-        
+         */}
 
 
 
 
 
-     
+{/*      
             </div>
-          </div>
+          </div> */}
 
 
 
 {/* RIGHT SIDE IMAGE CAROUSEL */}
-<div className="flex justify-center items-center mt-12 md:mt-0">
+{/* <div className="flex justify-center items-center mt-12 md:mt-0">
 
   <ImageCarousel />
 </div>
+ */}
 
 
 
 
 
+      {/* //   </div>
+      // </section> */}
+ {/* */} 
 
-        </div>
-      </section>
 
+
+{/* ================= HERO ================= */}
+<section className="relative overflow-hidden min-h-screen flex items-center">
+  <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+
+    {/* LEFT CONTENT */}
+    <div className="space-y-6 sm:space-y-8 text-center md:text-left">
+
+      <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[84px] font-serif leading-tight tracking-tight">
+        Connection,
+        <br />
+        done{" "}
+        <span className="relative inline-block">
+          intentionally
+          <span className="absolute left-0 bottom-1 sm:bottom-2 md:bottom-3 w-full h-2 sm:h-3 bg-accent/40 -z-10 rounded-full"></span>
+        </span>.
+      </h1>
+
+      <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-xl mx-auto md:mx-0 leading-relaxed font-serif">
+        Companio creates a structured environment where people can
+        connect, talk, and share meaningful time — without pressure.
+      </p>
+
+      {/* CTA BUTTONS */}
+      <div className="flex flex-col sm:flex-row items-center md:items-start justify-center md:justify-start gap-4 sm:gap-6 pt-4">
+
+        {/* GET STARTED */}
+        <Link
+          href={isLoggedIn ? "/explore" : "/register"}
+          className="w-full sm:w-auto text-center bg-primary text-white px-8 py-4 rounded-full shadow-soft hover:scale-105 transition duration-300"
+        >
+          {isLoggedIn ? "Explore" : "Get Started"}
+        </Link>
+
+        {/* LEARN MORE */}
+        <Link
+          href="/how-payments-work"
+          className="text-black underline underline-offset-4 hover:text-primary transition duration-300"
+        >
+          Learn More
+        </Link>
+
+      </div>
+    </div>
+
+    {/* RIGHT SIDE IMAGE CAROUSEL */}
+    <div className="flex justify-center items-center mt-4 md:mt-0 w-full">
+      <ImageCarousel />
+    </div>
+
+  </div>
+</section>
 
 
 
