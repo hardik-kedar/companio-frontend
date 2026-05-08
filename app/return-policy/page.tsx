@@ -1,3 +1,6 @@
+"use client";
+
+
 export default function ReturnPolicyPage() {
   return (
     <main className="min-h-screen bg-background text-foreground px-4 sm:px-6 py-10 sm:py-16">
