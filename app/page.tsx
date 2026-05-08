@@ -112,7 +112,13 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
 
 
 
-<FadeInSection>
+
+
+
+
+
+
+{/* <FadeInSection>
   <section id="learn-more-section" className="py-24 bg-white">
     <div className="max-w-6xl mx-auto px-6 text-center space-y-12">
 
@@ -138,7 +144,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
       </div>
 
       {/* Images Row */}
-      <div className="grid md:grid-cols-3 gap-8">
+      {/* <div className="grid md:grid-cols-3 gap-8">
 
         <div className="overflow-hidden rounded-3xl shadow-soft">
           <img
@@ -146,17 +152,17 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
             alt="Community"
             className="w-full h-[420px] object-cover hover:scale-105 transition duration-500"
           />
-        </div>
+        </div> */}
 
-        <div className="overflow-hidden rounded-3xl shadow-soft">
+        {/* <div className="overflow-hidden rounded-3xl shadow-soft">
           <img
             src="/images/community2.jpg"
             alt="Friends"
             className="w-full h-[420px] object-cover hover:scale-105 transition duration-500"
           />
-        </div>
+        </div> */}
 
-        <div className="overflow-hidden rounded-3xl shadow-soft">
+        {/* <div className="overflow-hidden rounded-3xl shadow-soft">
           <img
             src="/images/community3.jpg"
             alt="Meaningful connection"
@@ -168,8 +174,65 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     </div>
   </section>
-</FadeInSection>
+</FadeInSection> */}
+ <FadeInSection>
+  <section
+    id="learn-more-section"
+    className="py-16 sm:py-20 md:py-24 bg-white"
+  >
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-10 sm:space-y-12">
 
+      {/* Heading + Copy */}
+      <div className="space-y-4 sm:space-y-6">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif leading-tight">
+          Real People.
+          <br />
+          Real Conversations.
+        </h2>
+
+        <p className="text-sm sm:text-base md:text-lg text-muted max-w-3xl mx-auto leading-relaxed">
+          Companio isn't only about connection — it can also become your
+          part-time income.
+          <br className="hidden sm:block" />
+          Meet people you genuinely enjoy spending time with, set your own
+          availability, and earn money simply by being present.
+          <br className="hidden sm:block" />
+          You decide who you meet. You decide your value.
+        </p>
+      </div>
+
+      {/* Images Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+
+        <div className="overflow-hidden rounded-3xl shadow-soft">
+          <img
+            src="/images/community1.jpg"
+            alt="Community"
+            className="w-full h-[280px] sm:h-[340px] md:h-[420px] object-cover hover:scale-105 transition duration-500"
+          />
+        </div>
+
+        <div className="overflow-hidden rounded-3xl shadow-soft">
+          <img
+            src="/images/community2.jpg"
+            alt="Friends"
+            className="w-full h-[280px] sm:h-[340px] md:h-[420px] object-cover hover:scale-105 transition duration-500"
+          />
+        </div>
+
+        <div className="overflow-hidden rounded-3xl shadow-soft">
+          <img
+            src="/images/community3.jpg"
+            alt="Meaningful connection"
+            className="w-full h-[280px] sm:h-[340px] md:h-[420px] object-cover hover:scale-105 transition duration-500"
+          />
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</FadeInSection>
 
 
 
