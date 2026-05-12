@@ -439,7 +439,7 @@ const [isLoggedIn, setIsLoggedIn] = useState(false);
                 Secure Payments
               </h4>
               <p className="text-gray-600 text-sm">
-                All bookings processed securely via Razorpay.
+                All bookings processed securely .
               </p>
             </div>
 

@@ -1,177 +1,255 @@
 "use client";
+
+import React from "react";
+import Link from "next/link";
+
 export default function TermsPage() {
   return (
+    <main className="min-h-screen bg-black text-white px-4 sm:px-6 lg:px-8 py-6 sm:py-10">
+      <div className="max-w-5xl mx-auto">
 
-    <div className="max-w-4xl mx-auto p-6 pt-24">
+        {/* Back Button */}
+        <div className="mb-6">
+          <button
+            onClick={() => window.history.back()}
+            className="inline-flex items-center text-sm sm:text-base border border-zinc-700 px-4 py-2 rounded-full hover:bg-zinc-900 transition"
+          >
+            ← Back
+          </button>
+        </div>
 
-      <h1 className="text-3xl font-semibold mb-6">
-        Terms & Conditions
-      </h1>
+        {/* Main Container */}
+        <div className="bg-zinc-950 border border-zinc-800 rounded-3xl shadow-2xl p-5 sm:p-8 md:p-12">
 
-      <div className="space-y-6 text-sm text-gray-700 leading-relaxed">
+          {/* Header */}
+          <header className="text-center border-b border-zinc-800 pb-8 mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
+              Terms & Conditions
+            </h1>
 
-        <section>
-          <h2 className="font-semibold text-lg mb-2">
-            1. Platform Overview
-          </h2>
-          <p>
-            Companio is an online platform that connects individuals
-            seeking companionship with independent companions.
-            Companio acts only as a marketplace facilitator and
-            does not directly provide companionship services.
-          </p>
-        </section>
+            <p className="mt-3 text-sm sm:text-base text-zinc-400">
+              Effective Date: {new Date().toLocaleDateString()}
+            </p>
 
-        <section>
-          <h2 className="font-semibold text-lg mb-2">
-            2. Eligibility
-          </h2>
-          <p>
-            Users must be at least 18 years old to use the platform.
-            By registering, you confirm that you are legally permitted
-            to use Companio under the laws of your jurisdiction.
-          </p>
-        </section>
+            <p className="mt-2 text-xs sm:text-sm text-zinc-500 max-w-3xl mx-auto leading-relaxed">
+              These Terms & Conditions govern your access to and use of Companio,
+              including its website, platform, services, and related features.
+              By using Companio, you agree to these legally binding terms.
+            </p>
+          </header>
 
-        <section>
-          <h2 className="font-semibold text-lg mb-2">
-            3. User Accounts
-          </h2>
-          <p>
-            Users are responsible for maintaining the confidentiality of their account credentials. Any activity performed through a user's account is considered the responsibility of that user.
-          </p>
-        </section>
+          {/* Terms Content */}
+          <div className="space-y-10 text-zinc-300 text-sm sm:text-base leading-7">
 
-        <section>
-          <h2 className="font-semibold text-lg mb-2">
-            4. Payments
-          </h2>
-          <p>
-            Payments for bookings are processed through the platform.
-            Companio may charge platform fees for facilitating
-            transactions.
-          </p>
-        </section>
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                1. Platform Nature
+              </h2>
+              <p>
+                Companio is a technology-enabled marketplace platform that facilitates
+                user discovery, communication, and booking between independent users.
+                Companio does not directly provide companionship, personal, escort,
+                relationship, or in-person services.
+              </p>
+            </section>
 
-        <section>
-          <h2 className="font-semibold text-lg mb-2">
-            5. Independent Contractors
-          </h2>
-          <p>
-            Companions using the platform are independent individuals and are not employees, agents, or representatives of Companio. Companio does not control or supervise the services provided by companions.
-          </p>
-        </section>
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                2. Eligibility
+              </h2>
+              <p>
+                Users must be legally competent adults (18+) under applicable law.
+                By registering, you represent that all information provided is accurate
+                and lawful.
+              </p>
+            </section>
 
-        <section>
-          <h2 className="font-semibold text-lg mb-2">
-            6. Service Responsibility
-          </h2>
-          <p>
-           All interactions, meetings, and services arranged through the platform occur at the sole discretion and responsibility of the involved users. Companio does not guarantee the behavior, safety, legality, or quality of services provided by any user..
-          </p>
-        </section>
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                3. Account Responsibility
+              </h2>
+              <p>
+                Users are solely responsible for account credentials, activities,
+                profile content, communications, and compliance with applicable laws.
+                Companio may suspend accounts suspected of fraud, abuse, or policy
+                violations.
+              </p>
+            </section>
 
-        <section>
-          <h2 className="font-semibold text-lg mb-2">
-            7. Payments and Fees
-          </h2>
-          <p>
-            Payments for bookings are processed through the platform's payment system. Companio may charge service fees or commissions for facilitating transactions.
-          </p>
-        </section>
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                4. Independent User Relationship
+              </h2>
+              <p>
+                All service providers, companions, or participants on Companio act
+                independently and are not employees, agents, contractors, or legal
+                representatives of Companio.
+              </p>
+            </section>
 
-        <section>
-          <h2 className="font-semibold text-lg mb-2">
-            8. Refunds and Disputes
-          </h2>
-          <p>
-             Users may raise disputes through the platform if issues occur during a booking. Companio reserves the right to review and resolve disputes at its discretion based on available information.
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                5. Booking & Payments
+              </h2>
+              <p>
+                Companio may facilitate payments, escrow, subscriptions, or commissions
+                through integrated third-party processors. Processing fees, taxes,
+                deductions, or commissions may apply.
+              </p>
+            </section>
 
-          </p>
-        </section>
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                6. No Guarantee of Outcomes
+              </h2>
+              <p>
+                Companio does not guarantee compatibility, conduct, safety,
+                professionalism, legality, availability, or outcomes of user
+                interactions, bookings, or engagements.
+              </p>
+            </section>
 
-        <section>
-          <h2 className="font-semibold text-lg mb-2">
-            9. Prohibited Activities
-          </h2>
-          <p>
-            Users must not use the platform for illegal activities, harassment, fraud, exploitation, or any activity that violates applicable laws. Companio reserves the right to suspend or terminate
-             accounts involved in prohibited conduct.
-          </p>
-        </section>
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                7. User Conduct Standards
+              </h2>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Fraud or deceptive conduct</li>
+                <li>Harassment, abuse, or coercion</li>
+                <li>Illegal activities</li>
+                <li>Exploitation or trafficking</li>
+                <li>Payment circumvention</li>
+                <li>Platform misuse</li>
+              </ul>
+            </section>
 
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                8. Safety Disclaimer
+              </h2>
+              <p>
+                Users assume full responsibility for personal decisions, meetings,
+                communications, and off-platform conduct. Companio encourages users
+                to exercise independent caution and judgment.
+              </p>
+            </section>
 
-        <section>
-          <h2 className="font-semibold text-lg mb-2">
-            10. User Conduct
-          </h2>
-          <p>
-            Users must treat each other respectfully and behave responsibly during interactions arranged through the platform.
-          </p>
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                9. Disputes & Refunds
+              </h2>
+              <p>
+                Companio may review disputes for platform integrity purposes but is
+                not obligated to mediate, arbitrate, or enforce user agreements
+                unless legally required.
+              </p>
+            </section>
 
-        </section><section>
-          <h2 className="font-semibold text-lg mb-2">
-            11. Safety Disclaimer
-          </h2>
-          <p>
-            Companio does not conduct comprehensive background checks on users and cannot guarantee the safety of interactions. Users should exercise 
-            personal judgment and caution when meeting others.
-          </p>
-        </section><section>
-          <h2 className="font-semibold text-lg mb-2">
-            12. Platform Availability
-          </h2>
-          <p>
-            Companio may modify, suspend, or discontinue any part of 
-            the platform at any time without prior notice.
-          </p>
-        </section><section>
-          <h2 className="font-semibold text-lg mb-2">
-            13. Limitation of Liability
-          </h2>
-          <p>
-            Companio shall not be liable for any damages, losses, injuries, or disputes arising from interactions between
-             users or services arranged through the platform.
-          </p>
-        </section><section>
-          <h2 className="font-semibold text-lg mb-2">
-            14. Account Suspension or Termination
-          </h2>
-          <p>
-            Companio reserves the right to suspend or permanently terminate accounts that violate 
-            these terms or engage in suspicious activity.
-          </p>
-        </section><section>
-          <h2 className="font-semibold text-lg mb-2">
-            15. Changes to Terms
-          </h2>
-          <p>
-            Companio may update these Terms & Conditions periodically. Continued use of the platform 
-            constitutes acceptance of the updated terms.
-          </p>
-        </section><section>
-          <h2 className="font-semibold text-lg mb-2">
-            16. Governing Law
-          </h2>
-          <p>
-            These terms are governed by the laws of India. Any disputes related to the platform shall fall
-             under the jurisdiction of the courts in India.
-          </p>
-        </section>
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                10. Intellectual Property
+              </h2>
+              <p>
+                All platform branding, software, UI, design, systems, and proprietary
+                content remain the exclusive property of Companio unless otherwise stated.
+              </p>
+            </section>
 
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                11. Suspension & Termination
+              </h2>
+              <p>
+                Companio reserves the right to restrict, suspend, or terminate
+                access without notice where risk, policy violations, or legal
+                concerns arise.
+              </p>
+            </section>
 
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                12. Limitation of Liability
+              </h2>
+              <p>
+                To the maximum extent permitted by law, Companio shall not be liable
+                for direct, indirect, incidental, consequential, reputational,
+                financial, emotional, physical, or legal damages arising from platform use.
+              </p>
+            </section>
 
-<section>
-          <h2 className="font-semibold text-lg mb-2">
-            17. Contact Information
-          </h2>
-          <p>
-            For any questions regarding these Terms & Conditions, users may contact support through the platform.
-          </p>
-        </section>
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                13. Indemnification
+              </h2>
+              <p>
+                Users agree to indemnify and hold Companio harmless from claims,
+                liabilities, losses, damages, and legal expenses resulting from
+                misuse, unlawful conduct, or policy breaches.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                14. Policy Changes
+              </h2>
+              <p>
+                Companio may revise these Terms periodically. Continued platform
+                usage after updates constitutes acceptance.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                15. Governing Law
+              </h2>
+              <p>
+                These Terms shall be governed by the laws of India. Jurisdiction
+                shall lie with competent courts in India, subject to applicable law.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-3">
+                16. Contact
+              </h2>
+              <p>
+                For legal, compliance, or policy concerns:
+                <br />
+                <span className="text-white font-medium break-all">
+                  companio.support@gmail.com
+                </span>
+              </p>
+            </section>
+
+          </div>
+
+          {/* Footer */}
+          <footer className="mt-12 pt-8 border-t border-zinc-800">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 text-sm text-zinc-400">
+              <Link href="/privacy-policy" className="hover:text-white transition">
+                Privacy Policy
+              </Link>
+
+              <Link href="/terms" className="hover:text-white transition">
+                Terms & Conditions
+              </Link>
+
+              <Link href="/refund-policy" className="hover:text-white transition">
+                Refund Policy
+              </Link>
+
+              <Link href="/return-policy" className="hover:text-white transition">
+                Return Policy
+              </Link>
+            </div>
+
+            <p className="text-center text-xs text-zinc-500 mt-6">
+              © {new Date().getFullYear()} Companio. All rights reserved.
+            </p>
+          </footer>
+
+        </div>
       </div>
-
-    </div>
-
+    </main>
   );
 }
